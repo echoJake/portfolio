@@ -1,14 +1,88 @@
+/*
+CSS Sheet for Jacob Jaynes Webpage
+Made by Jacob Jayne
+*/
+
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, video {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-body {
-    background-color: #8fbcbb;
+.menu-icon {
+    z-index: 100;
+    display: block;
+    float: right;
+    padding-top: 15px;
 }
 
+/*mobile header*/
+header h1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-family: 'Lalezar', cursive;
+    font-size: 20px;
+}
+
+.tablet_desktop_nav {
+    display: none;
+}
+
+body {
+    background: rgb(136,192,208);
+    background: radial-gradient(circle, rgba(136,192,208,1) 0%, rgba(129,161,193,1) 50%, rgba(94,129,172,1) 100%); 
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+/*styles for main content*/
+#page_style {
+    background-color: rgba(255, 255, 255, 0.363);
+    border-color: rgba(255, 255, 255, 0.363);
+    border-width: 9px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+/* home page content*/
+video {
+    height: 100%;
+    width: 100%;
+}
+
+/*about page content*/
+#side_pic img {
+    max-width: 25%;
+    float: right;
+    width: 30%;
+    padding-top: 70px;
+    padding-right: 25px;
+}
+
+#page_style h2 {
+    text-align: center;
+    padding-top: 8px;
+}
+
+#page_style p {
+    display: block;
+    padding-top: 8px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#page_style dt {
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+
+/* mobile logo */
 header img {
     margin: 0 auto;
     max-width: 15%;
@@ -17,16 +91,82 @@ header img {
     float: left;
 }
 
-/*Desktop Viewport*/
+#hero_img {
+    max-width: 99%;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
+    border: #015064;
+    border-radius: 15px;
+}
+
+/*link styles*/
+.outside_link {
+    color: rgb(0, 0, 114);
+    text-decoration: none;
+}
+
+.outside_link:hover {
+    text-decoration: underline;
+    color: rgb(61, 9, 61);
+}
+
+footer {
+    background-color: #020d13;
+    border-radius: 15px;
+    text-align: center;
+    color: #b2cedd;
+    align-content: center;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+#git_logo img {
+    max-width: 4%;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+#lin_logo img {
+    max-width: 5%;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+
+/* Tablet/desktop Viewport */
 @media screen and (min-width: 1015px), print {
-    
+
     header h1 {
         text-align: center;
         padding-top: 10px;
-        padding-bottom: 12px;
+        padding-bottom: 8px;
+        font-family: 'Lalezar', cursive;
+        font-size: 80px;
+    }
+
+    header img {
+        margin: 0 auto;
+        max-width: 15%;
+        display: block;
+        padding-bottom: 0;
+        float: left;
+    }
+
+    /*desktop naviagtion bar*/
+    .mobile-nav {
+        display: none;
+    }
+
+    .tablet_desktop_nav {
+        display: contents;
     }
 
     nav ul {
+        border-radius: 15px;
         list-style-type: none;
         margin: 0;
         padding: 0;
